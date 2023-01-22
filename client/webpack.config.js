@@ -18,6 +18,10 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'J.A.T.E'
+      }),
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
@@ -34,7 +38,7 @@ module.exports = () => {
         publicPath: './',
         icons: [
           {
-            src: path.resolve('./client/favicon.ico'),
+            src: path.resolve('./favicon.ico'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
