@@ -30,7 +30,7 @@ Then you'll need to run the command ```npm start```. This will launch the backen
 
 Time to test it out! Open you browser and launch http://localhost:3000/
 
-![Step 3 picture](./assets/step3.PNG)
+![Step 3 picture](./assets/Step3.PNG)
 
         
 ## License
